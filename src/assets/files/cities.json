@@ -1,16 +1,22 @@
 {
     "data": [
         {
+            "id": 1,
             "name": "La Matanza",
-            "image": "c1.jpg"
+            "image": "c1.jpg",
+            "desc": "Alto lugar ameo"
         },
         {
+            "id": 2,
             "name": "La Ferrere",
-            "image": "c2.jpg"
+            "image": "c2.jpg",
+            "desc": "Te roban hasta tu señora"
         },
         {
+            "id": 3,
             "name": "Villa Palito",
-            "image": "c3.jpg"
+            "image": "c3.jpg",
+            "desc": "Barrio fino y elegante"
         }
     ]
 }
