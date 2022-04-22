@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "name": "Leo",
+            "state": "Online",
+            "description": "A la gilada ni cabida",
+            "image": "ej5.jpg"
+        },
+        {
+            "name": "juan",
+            "state": "Online",
+            "description": "Peron <3",
+            "image": "ej6.jpg"
+        },
+        {
+            "name": "lobio",
+            "state": "Online",
+            "description": "Qué tirá Cubilla",
+            "image": "ej4.jpg"
+        }
+    ]
+}

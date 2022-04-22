@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "name": "La Matanza",
+            "image": "c1.jpg"
+        },
+        {
+            "name": "La Ferrere",
+            "image": "c2.jpg"
+        },
+        {
+            "name": "Villa Palito",
+            "image": "c3.jpg"
+        }
+    ]
+}

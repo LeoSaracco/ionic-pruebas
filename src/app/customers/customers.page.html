@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="mystyle">
+    <ion-title>Customers</ion-title>
+  </ion-toolbar>
+  <!-- Barra de búsquedas -->
+  <ion-toolbar>
+    <ion-searchbar aria-placeholder="Introduzca palabra de búsqueda..." animated
+    (ionChange)="searchCustomer($event)">
+  </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content class="ion-padding">
+    <button (click)="goHome()" class="btnRedirect">Go to home</button>
+    <!-- List of Text Items -->
+    <ion-list *ngIf="users.length > 0 && !arrayVacio">
+      <ion-list-header> Users </ion-list-header>
+      <ion-item *ngFor="let user of searchedUser">
+        <ion-avatar slot="start">
+          <img src="../../assets/img/{{user.image}}" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{user.name}}</h2>
+          <h3>{{user.state}}</h3>
+          <p>{{user.description}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <br> 
+    <ion-chip *ngIf="arrayVacio" id="nanUsers">
+      <ion-avatar>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjYzVkYmZmIiBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBkPSJNMjU2IDMwNGM2MS42IDAgMTEyLTUwLjQgMTEyLTExMlMzMTcuNiA4MCAyNTYgODBzLTExMiA1MC40LTExMiAxMTIgNTAuNCAxMTIgMTEyIDExMnptMCA0MGMtNzQuMiAwLTIyNCAzNy44LTIyNCAxMTJ2NTZoNDQ4di01NmMwLTc0LjItMTQ5LjgtMTEyLTIyNC0xMTJ6IiBmaWxsPSIjODJhZWZmIi8+PC9zdmc+"
+        />
+      </ion-avatar>
+      <ion-label> No tenés usuarios</ion-label>
+    </ion-chip>   
+  </ion-content>
+</ion-content>
